@@ -3,7 +3,7 @@ description: "Generates an SVG with grades of Megadados"
 author: "andrebrito16"
 
 runs:
-  using: node18 
+  using: node16
   main: "dist/index.js"
 
 inputs:
