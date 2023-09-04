@@ -1,0 +1,16 @@
+name: "generate-insper-autograding-megadados-svg"
+description: "Generates an SVG with grades of Megadados"
+author: "andrebrito16"
+
+runs:
+  using: node18 
+  main: "dist/index.js"
+
+inputs:
+  IAC_TOKEN:
+    description: "Insper Autograding Token"
+    required: true
+
+outputs:
+  svg_file:
+    description: "The path to the generated SVG file"

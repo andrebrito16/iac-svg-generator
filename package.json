@@ -1,0 +1,21 @@
+{
+  "name": "autograding-svg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "type": "tsc --noEmit",
+    "lint": "prettier -c '**/*.{ts,js,json,md,yml,yaml}' '!packages/*/dist/**' '!svg-only/dist/**'",
+    "build:action": "( cd packages/action ; npm run build )"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.5.9",
+    "typescript": "^5.2.2",
+    "@sucrase/jest-plugin": "3.0.0",
+    "@types/jest": "29.5.3",
+    "prettier": "2.8.8"
+  }
+}
