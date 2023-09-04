@@ -22,9 +22,9 @@ import * as path from 'path';
     const svg = generateSVG(grades);
 
     console.log(`💾 writing to iac_grades.svg`);
-    fs.mkdirSync(path.dirname("iac_grades.svg"), { recursive: true });
-    fs.writeFileSync("iac_grades.svg", svg);
-    core.setOutput("svg_file", "iac_grades.svg");
+    fs.mkdirSync(path.dirname("dist/iac_grades.svg"), { recursive: true });
+    fs.writeFileSync("dist/iac_grades.svg", svg);
+    core.setOutput("svg_file", "dist/iac_grades.svg");
   } catch (e: any) {
     core.setFailed(`Action failed with "${e.message}"`);
   }

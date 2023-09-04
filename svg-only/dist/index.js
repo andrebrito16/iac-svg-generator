@@ -2980,9 +2980,9 @@ __nccwpck_require__.r(__webpack_exports__);
         const { generateSVG } = await __nccwpck_require__.e(/* import() */ 329).then(__nccwpck_require__.bind(__nccwpck_require__, 329));
         const svg = generateSVG(grades);
         console.log(`💾 writing to iac_grades.svg`);
-        fs__WEBPACK_IMPORTED_MODULE_0__.mkdirSync(path__WEBPACK_IMPORTED_MODULE_2__.dirname("iac_grades.svg"), { recursive: true });
-        fs__WEBPACK_IMPORTED_MODULE_0__.writeFileSync("iac_grades.svg", svg);
-        _actions_core__WEBPACK_IMPORTED_MODULE_1__.setOutput("svg_file", "iac_grades.svg");
+        fs__WEBPACK_IMPORTED_MODULE_0__.mkdirSync(path__WEBPACK_IMPORTED_MODULE_2__.dirname("dist/iac_grades.svg"), { recursive: true });
+        fs__WEBPACK_IMPORTED_MODULE_0__.writeFileSync("dist/iac_grades.svg", svg);
+        _actions_core__WEBPACK_IMPORTED_MODULE_1__.setOutput("svg_file", "dist/iac_grades.svg");
     }
     catch (e) {
         _actions_core__WEBPACK_IMPORTED_MODULE_1__.setFailed(`Action failed with "${e.message}"`);
