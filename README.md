@@ -1,11 +1,13 @@
 # Insper Autograding SVG Generator - Megadados
 
 # Sumário
-- [Preview](#preview)
+- [Preview](#exemplo-de-como-ficará-o-badge)
 - [Como usar](#como-usar)
 
-# Preview
-![Examplo](/public/example.png)
+# Exemplo de como ficará o badge:
+<p align="center">
+  <img src="public/example.png" width="800">
+</p>
 
 # Como usar:
 
